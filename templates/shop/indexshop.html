@@ -1,0 +1,574 @@
+{% extends 'shop/basics.html' %}
+<!--<!doctype html>-->
+<!--<html lang="en">-->
+<!--  <head>-->
+<!--    &lt;!&ndash; Required meta tags &ndash;&gt;-->
+<!--    <meta charset="utf-8">-->
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1">-->
+
+<!--    &lt;!&ndash; Bootstrap CSS &ndash;&gt;-->
+<!--    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">-->
+
+<!--    <title>Hello, world!</title>-->
+<!--     <style>-->
+<!--        .col-md-3 {-->
+<!--            display: inline-block;-->
+<!--            margin-left: -4px;-->
+<!--        }-->
+
+<!--&lt;!&ndash;        .carousel-indicators .active {&ndash;&gt;-->
+<!--&lt;!&ndash;          background-color: red;&ndash;&gt;-->
+<!--&lt;!&ndash;            }&ndash;&gt;-->
+<!--&lt;!&ndash;          .col-md-3 img{&ndash;&gt;-->
+<!--&lt;!&ndash;          width:100%;&ndash;&gt;-->
+<!--&lt;!&ndash;          height:auto;&ndash;&gt;-->
+<!--&lt;!&ndash;          }&ndash;&gt;-->
+<!--&lt;!&ndash;          body .carousel-indicator li{&ndash;&gt;-->
+<!--&lt;!&ndash;          background-color: blue;&ndash;&gt;-->
+<!--&lt;!&ndash;          }&ndash;&gt;-->
+<!--&lt;!&ndash;          body .carousel-indicators{&ndash;&gt;-->
+<!--&lt;!&ndash;          bottom: 0;&ndash;&gt;-->
+<!--&lt;!&ndash;          }&ndash;&gt;-->
+<!--&lt;!&ndash;          body .carousel-control-prev-icon,&ndash;&gt;-->
+<!--&lt;!&ndash;          body .carousel-control-next-icon{&ndash;&gt;-->
+<!--&lt;!&ndash;          background-color: blue;&ndash;&gt;-->
+<!--&lt;!&ndash;          }&ndash;&gt;-->
+<!--&lt;!&ndash;           body .no-padding{&ndash;&gt;-->
+<!--&lt;!&ndash;           padding-left: 0,&ndash;&gt;-->
+<!--&lt;!&ndash;           padding-right: 0;&ndash;&gt;-->
+<!--&lt;!&ndash;           }&ndash;&gt;-->
+
+
+<!--    </style>-->
+<!--  </head>-->
+<!--  <body>-->
+
+<!--{% load static %}-->
+<!--<a href ="{%static 'shop/mystatics.txt' %}">clickk bro</a>-->
+<!--<nav class="navbar navbar-expand-lg navbar-dark bg-dark">-->
+<!--  <div class="container-fluid">-->
+<!--    <a class="navbar-brand" href="#">My shoping cart</a>-->
+<!--    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">-->
+<!--      <span class="navbar-toggler-icon"></span>-->
+<!--    </button>-->
+<!--    <div class="collapse navbar-collapse" id="navbarSupportedContent">-->
+<!--      <ul class="navbar-nav me-auto mb-2 mb-lg-0">-->
+<!--        <li class="nav-item">-->
+<!--          <a class="nav-link active" aria-current="page" href="#">Home</a>-->
+<!--        </li>-->
+<!--        <li class="nav-item">-->
+<!--          <a class="nav-link" href="#">Link</a>-->
+<!--        </li>-->
+<!--        <li class="nav-item dropdown">-->
+<!--          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">-->
+<!--            Dropdown-->
+<!--          </a>-->
+<!--          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">-->
+<!--            <li><a class="dropdown-item" href="#">Action</a></li>-->
+<!--            <li><a class="dropdown-item" href="#">Another action</a></li>-->
+<!--            <li><hr class="dropdown-divider"></li>-->
+<!--            <li><a class="dropdown-item" href="#">Something else here</a></li>-->
+<!--          </ul>-->
+<!--        </li>-->
+<!--        <li class="nav-item">-->
+<!--          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>-->
+<!--        </li>-->
+<!--      </ul>-->
+<!--      <form class="d-flex">-->
+<!--        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">-->
+<!--        <button class="btn btn-outline-success" type="submit">Search</button>-->
+<!--      </form>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</nav>-->
+<!--&lt;!&ndash;navbar code ends here&ndash;&gt;-->
+<!--&lt;!&ndash; carousel indicators starts from here&ndash;&gt;-->
+<!--<div class="container">-->
+<!--<div id="demo" class="carousel slide my-3" data-ride="carousel">-->
+<!--<ul class="carousel-indicators">-->
+<!--  <li data-target="#demo" data-slide-to="0" class="active"></li>-->
+<!--  <li data-target="#demo" data-slide-to="1" ></li>-->
+<!--  <li data-target="#demo" data-slide-to="2" ></li>-->
+<!--</ul>-->
+<!--&lt;!&ndash;  slideshow starts here&ndash;&gt;-->
+<!--<div class="container carousel-inner no-padding">-->
+<!--  <div class="carousel-item active">-->
+<!--  <div class ="col-xs-3 col-sm-3 col-md-3">-->
+<!--    <div class="card" style="width: 18rem;">-->
+<!--  <img src="..." class="card-img-top" alt="...">-->
+<!--  <div class="card-body">-->
+<!--    <h5 class="card-title">Card title</h5>-->
+<!--    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>-->
+<!--    <a href="#" class="btn btn-primary">Go somewhere</a>-->
+<!--  </div>-->
+<!--</div>-->
+<!--  </div>-->
+<!--  <div class ="col-xs-3 col-sm-3 col-md-3">-->
+<!--    <div class="card" style="width: 18rem;">-->
+<!--  <img src="..." class="card-img-top" alt="...">-->
+<!--  <div class="card-body">-->
+<!--    <h5 class="card-title">Card title</h5>-->
+<!--    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>-->
+<!--    <a href="#" class="btn btn-primary">Go somewhere</a>-->
+<!--  </div>-->
+<!--</div>-->
+<!--  </div>-->
+<!--    <div class ="col-xs-3 col-sm-3 col-md-3">-->
+<!--    <div class="card" style="width: 18rem;">-->
+<!--  <img src="..." class="card-img-top" alt="...">-->
+<!--  <div class="card-body">-->
+<!--    <h5 class="card-title">Card title</h5>-->
+<!--    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>-->
+<!--    <a href="#" class="btn btn-primary">Go somewhere</a>-->
+<!--  </div>-->
+<!--</div>-->
+<!--  </div>-->
+<!--    <div class ="col-xs-3 col-sm-3 col-md-3">-->
+<!--    <div class="card" style="width: 18rem;">-->
+<!--  <img src="..." class="card-img-top" alt="...">-->
+<!--  <div class="card-body">-->
+<!--    <h5 class="card-title">Card title</h5>-->
+<!--    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>-->
+<!--    <a href="#" class="btn btn-primary">Go somewhere</a>-->
+<!--  </div>-->
+<!--</div>-->
+<!--  </div>-->
+<!--  </div>-->
+<!--  <div class="carousel-item ">-->
+<!--  <div class ="col-xs-3 col-sm-3 col-md-3">-->
+<!--    <div class="card" style="width: 18rem;">-->
+<!--  <img src="..." class="card-img-top" alt="...">-->
+<!--  <div class="card-body">-->
+<!--    <h5 class="card-title">Card title</h5>-->
+<!--    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>-->
+<!--    <a href="#" class="btn btn-primary">Go somewhere</a>-->
+<!--  </div>-->
+<!--</div>-->
+<!--  </div>-->
+<!--  <div class ="col-xs-3 col-sm-3 col-md-3">-->
+<!--    <div class="card" style="width: 18rem;">-->
+<!--  <img src="..." class="card-img-top" alt="...">-->
+<!--  <div class="card-body">-->
+<!--    <h5 class="card-title">Card title</h5>-->
+<!--    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>-->
+<!--    <a href="#" class="btn btn-primary">Go somewhere</a>-->
+<!--  </div>-->
+<!--</div>-->
+<!--  </div>-->
+<!--    <div class ="col-xs-3 col-sm-3 col-md-3">-->
+<!--    <div class="card" style="width: 18rem;">-->
+<!--  <img src="..." class="card-img-top" alt="...">-->
+<!--  <div class="card-body">-->
+<!--    <h5 class="card-title">Card title</h5>-->
+<!--    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>-->
+<!--    <a href="#" class="btn btn-primary">Go somewhere</a>-->
+<!--  </div>-->
+<!--</div>-->
+<!--  </div>-->
+<!--    <div class ="col-xs-3 col-sm-3 col-md-3">-->
+<!--    <div class="card" style="width: 18rem;">-->
+<!--  <img src="..." class="card-img-top" alt="...">-->
+<!--  <div class="card-body">-->
+<!--    <h5 class="card-title">Card title</h5>-->
+<!--    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>-->
+<!--    <a href="#" class="btn btn-primary">Go somewhere</a>-->
+<!--  </div>-->
+<!--</div>-->
+<!--  </div>-->
+<!--  </div>-->
+<!--  <div class="carousel-item ">-->
+<!--  <div class ="col-xs-3 col-sm-3 col-md-3">-->
+<!--    <div class="card" style="width: 18rem;">-->
+<!--  <img src="..." class="card-img-top" alt="...">-->
+<!--  <div class="card-body">-->
+<!--    <h5 class="card-title">Card title</h5>-->
+<!--    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>-->
+<!--    <a href="#" class="btn btn-primary">Go somewhere</a>-->
+<!--  </div>-->
+<!--</div>-->
+<!--  </div>-->
+<!--  <div class ="col-xs-3 col-sm-3 col-md-3">-->
+<!--    <div class="card" style="width: 18rem;">-->
+<!--  <img src="..." class="card-img-top" alt="...">-->
+<!--  <div class="card-body">-->
+<!--    <h5 class="card-title">Card title</h5>-->
+<!--    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>-->
+<!--    <a href="#" class="btn btn-primary">Go somewhere</a>-->
+<!--  </div>-->
+<!--</div>-->
+<!--  </div>-->
+<!--    <div class ="col-xs-3 col-sm-3 col-md-3">-->
+<!--    <div class="card" style="width: 18rem;">-->
+<!--  <img src="..." class="card-img-top" alt="...">-->
+<!--  <div class="card-body">-->
+<!--    <h5 class="card-title">Card title</h5>-->
+<!--    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>-->
+<!--    <a href="#" class="btn btn-primary">Go somewhere</a>-->
+<!--  </div>-->
+<!--</div>-->
+<!--  </div>-->
+<!--    <div class ="col-xs-3 col-sm-3 col-md-3">-->
+<!--    <div class="card" style="width: 18rem;">-->
+<!--  <img src="..." class="card-img-top" alt="...">-->
+<!--  <div class="card-body">-->
+<!--    <h5 class="card-title">Card title</h5>-->
+<!--    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>-->
+<!--    <a href="#" class="btn btn-primary">Go somewhere</a>-->
+<!--  </div>-->
+<!--</div>-->
+<!--  </div>-->
+<!--  </div>-->
+<!--</div></div>-->
+<!--<a class="carousel-control-prev" href="#demo" data-slide="prev">-->
+<!--  <span class="carousel-control-prev-icon"></span>-->
+<!--</a>-->
+<!--<a class="carousel-control-next" href="#demo" data-slide="next">-->
+<!--  <span class="carousel-control-next-icon"></span>-->
+<!--</a>-->
+<!--    &lt;!&ndash; Optional JavaScript; choose one of the two! &ndash;&gt;-->
+
+<!--    &lt;!&ndash; Option 1: Bootstrap Bundle with Popper &ndash;&gt;-->
+<!--   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>-->
+<!--    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>-->
+<!--    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>-->
+<!--  </body>-->
+<!--</html>-->
+<!--<!doctype html>-->
+<!--<html lang="en">-->
+<!--  <head>-->
+<!--    &lt;!&ndash; Required meta tags &ndash;&gt;-->
+<!--    <meta charset="utf-8">-->
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">-->
+
+<!--    &lt;!&ndash; Bootstrap CSS &ndash;&gt;-->
+<!--    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">-->
+
+<!--    <title>Hello, world!</title>-->
+<!--      <style>-->
+<!--          .col-md-3-->
+<!--          {-->
+<!--          display: inline-block;-->
+<!--          margin-left:-4px;-->
+<!--          }-->
+<!--          .carousel-indicators .active {-->
+<!--          background-color: blue;-->
+<!--            }-->
+<!--          .col-md-3 img{-->
+<!--          width:100px;-->
+<!--          height:100px;-->
+<!--          }-->
+<!--          body .carousel-indicator li{-->
+<!--          background-color: blue;-->
+<!--          }-->
+<!--          body .carousel-indicators{-->
+<!--          bottom: 0;-->
+<!--          }-->
+<!--          body .carousel-control-prev-icon,-->
+<!--          body .carousel-control-next-icon{-->
+<!--          background-color: blue;-->
+<!--          }-->
+<!--           body .no-padding{-->
+<!--           padding-left: 0,-->
+<!--           padding-right: 0;-->
+<!--           }-->
+<!--  </style>-->
+<!--  </head>-->
+<!--  <body>-->
+<!--  {% load static %}-->
+<!--    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">-->
+<!--  <a class="navbar-brand" href="#">My Awesome Cart</a>-->
+<!--  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">-->
+<!--    <span class="navbar-toggler-icon"></span>-->
+<!--  </button>-->
+
+<!--  <div class="collapse navbar-collapse" id="navbarSupportedContent">-->
+<!--    <ul class="navbar-nav mr-auto">-->
+<!--      <li class="nav-item active">-->
+<!--        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>-->
+<!--      </li>-->
+<!--      <li class="nav-item">-->
+<!--        <a class="nav-link" href="#">Link</a>-->
+<!--      </li>-->
+<!--      <li class="nav-item dropdown">-->
+<!--        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">-->
+<!--          Dropdown-->
+<!--        </a>-->
+<!--        <div class="dropdown-menu" aria-labelledby="navbarDropdown">-->
+<!--          <a class="dropdown-item" href="#">Action</a>-->
+<!--          <a class="dropdown-item" href="#">Another action</a>-->
+<!--          <div class="dropdown-divider"></div>-->
+<!--          <a class="dropdown-item" href="#">Something else here</a>-->
+<!--        </div>-->
+<!--      </li>-->
+<!--      <li class="nav-item">-->
+<!--        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>-->
+<!--      </li>-->
+<!--    </ul>-->
+<!--    <form class="form-inline my-2 my-lg-0">-->
+<!--      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">-->
+<!--      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>-->
+<!--    </form>-->
+<!--  </div>-->
+<!--</nav>-->
+
+<!--<div class="container">-->
+<!--<div id="demo" class="carousel slide my-3" data-ride="carousel">-->
+<!--    <ul class="carousel-indicators">-->
+<!--      <li data-target="#demo" data-slide-to="0" class="active"></li>-->
+<!--      {% for i in range%}-->
+<!--      <li data-target="#demo" data-slide-to="{{i}}" ></li>-->
+<!--      {% endfor %}-->
+<!--    </ul>-->
+
+<!--    &lt;!&ndash;Slideshow starts here &ndash;&gt;-->
+<!--    <div class="container carousel-inner no-padding">-->
+
+<!--      <div class="carousel-item active">-->
+<!--        <div class="col-xs-3 col-sm-3 col-md-3">-->
+<!--          <div class="card" style="width: 18rem;">-->
+<!--            <img src='/media/{{product.0.images}}' class="card-img-top" alt="...">-->
+<!--            <div class="card-body">-->
+<!--                <h5 class="card-title">{{product.0.product_name}}</h5>-->
+<!--                <p class="card-text">{{product.0.desc}}</p>-->
+<!--                <a href="#" class="btn btn-primary">Add to cart</a>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--       </div>-->
+<!--        {% for i in product|slice:"1:" %}-->
+
+<!--        <div class="col-xs-3 col-sm-3 col-md-3">-->
+<!--          <div class="card" style="width: 18rem;">-->
+<!--            <img src='/media/{{i.images}}' class="card-img-top" alt="...">-->
+<!--            <div class="card-body">-->
+<!--              <h5 class="card-title">{{i.product_name}}</h5>-->
+<!--              <p class="card-text">{{i.desc}}</p>-->
+<!--              <a href="#" class="btn btn-primary">Add to cart</a>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--        {% if forloop.counter|divisibleby:3 and forloop.counter > 0 and not forloop.last%}-->
+<!--      </div><div class ="carousel-item">-->
+<!--      {% endif%}-->
+<!--       {% endfor%}-->
+<!--      </div>-->
+<!--    </div>-->
+
+<!--      </div>-->
+
+
+<!--    &lt;!&ndash; left and right controls for the slide &ndash;&gt;-->
+<!--    <a class="carousel-control-prev" href="#demo" data-slide="prev">-->
+<!--        <span class="carousel-control-prev-icon"></span>-->
+<!--    </a>-->
+<!--    <a class="carousel-control-next" href="#demo" data-slide="next">-->
+<!--        <span class="carousel-control-next-icon"></span>-->
+<!--    </a>-->
+<!--</div>-->
+
+
+
+<!--    &lt;!&ndash; Optional JavaScript &ndash;&gt;-->
+<!--    &lt;!&ndash; jQuery first, then Popper.js, then Bootstrap JS &ndash;&gt;-->
+
+<!--    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>-->
+<!--    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>-->
+<!--    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>-->
+<!--  </body>-->
+<!--</html>-->
+
+{% block title %} e commerce website {% endblock %}
+{% block css%}
+          .col-md-3
+          {
+          display: inline-block;
+          margin-left:-4px;
+          }
+          .carousel-indicators .active {
+          background-color: blue;
+            }
+          .col-md-3 img{
+          max-width:260px;
+          height:290px;
+
+          }
+          body .carousel-indicator li{
+          background-color:blue;
+          }
+          body .carousel-indicators{
+          bottom: -40px;
+          }
+          body .carousel-control-prev-icon,
+          body .carousel-control-next-icon{
+          background-color: blue;
+          }
+.carousel-control-prev,
+          .carousel-control-next{
+top:auto;
+bottom:auto;
+padding-top:220px;}
+           body .no-padding{
+           padding-left: 0,
+           padding-right: 0;
+           }
+ {% endblock %}
+ {% block body %}
+<div class="container">
+    {% for product,range,nslides in allproduct %}
+    <h4 class="my-4">Flash Sale On {{product.0.category}} - Recommended Items</h4>
+    <div class="row">
+<div id="demo{{ forloop.counter}}" class="col carousel slide my-3" data-ride="carousel">
+    <ul class="carousel-indicators">
+      <li data-target="#demo{{ forloop.counter}}" data-slide-to="0" class="active"></li>
+      {% for i in range%}
+      <li data-target="#demo{{ forloop.parentloop.counter}}" data-slide-to="{{i}}" ></li>
+      {% endfor %}
+    </ul>
+
+    <!--Slideshow starts here -->
+    <div class="container carousel-inner no-padding">
+
+      <div class="carousel-item active">
+
+        {% for i in product %}
+
+        <div class="col-xs-3 col-sm-3 col-md-3">
+          <div class="card align-items-center" style="width: 18rem;">
+            <img src='/media/{{i.images}}' class="card-img-top" alt="...">
+            <div class="card-body">
+              <h6 class="card-title" id="namepr{{i.id}}">{{i.product_name}}</h6>
+              <p class="card-text">{{i.desc|slice:"0:20"}}..</p>
+                <h6>Price:<span id="pricepr{{i.id}}">{{i.prices}}</span></h6>
+                <span id ="divpr{{i.id}}" class="divpr" >
+                    <button id="pr{{i.id}}" class="btn btn-primary cart">Add to cart</button></span>
+                <a href="products/{{i.id}}"><button id="qv{{i.id}}" class="btn btn-primary cart">quik view</button></a>
+            </div>
+          </div>
+        </div>
+        {% if forloop.counter|divisibleby:4 and forloop.counter > 0 and not forloop.last%}
+      </div><div class ="carousel-item">
+      {% endif%}
+
+       {% endfor%}
+      </div>
+    </div>
+
+
+</div>
+
+    <!-- left and right controls for the slide -->
+    <a class="carousel-control-prev" href="#demo{{ forloop.counter}}" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#demo{{ forloop.counter}}" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+    </a>
+
+    </div>
+{% endfor%}
+</div>
+{% endblock%}
+{% block js%}
+<script>
+// Find out the cart items from localStorage
+ if(localStorage.getItem('cart')==null){
+       var cart={};
+             }
+else{
+
+cart=JSON.parse(localStorage.getItem('cart'));
+document.getElementById('cart').innerHTML=Object.keys(cart).length;
+updateCart(cart);
+}
+<!--   if add to cart button have clicked then increment the item-->
+<!--$('.cart').click(function(){-->
+ $('.divpr').on('click', 'button.cart', function(){
+    var idstring =this.id.toString();
+   console.log(idstring);
+var qty
+var name
+var price
+       if(cart[idstring]!=undefined){
+       console.log("car is working")
+     qty=cart[idstring][0]+1;
+
+     cart[idstring]=cart[idstring]+1;}
+     else{
+     qty =1;
+     price=document.getElementById("price"+idstring).innerHTML;
+     name=document.getElementById("name"+  idstring).innerHTML;
+       cart[idstring]=[qty,name,parseInt(price)];
+       }
+       console.log(cart);
+       updateCart(cart);
+
+
+       });
+       updatePopover(cart);
+function updatePopover(cart){
+var pop=" ";
+pop=pop+ "<h4> cart for your item in my shopping cart </h4> <div class=' mx-2 my-2'>";
+var i=1;
+for(item in cart){
+pop=pop+"<b>" + i + "</b>. ";
+
+ pop=pop+document.getElementById("name"+item).innerHTML.slice(0,20)+". qty: " + cart[item][0]+  '<br>';
+
+i=i+1;}
+pop=pop+"</div> <a href='/shop/checkout'><button class='btn btn-primary' id ='checkout'>Checkout</button></a> <button class='btn btn-primary' onclick='clearCart()' id ='clearCart'>Clear Cart</button>     "
+document.getElementById("popcart").setAttribute('data-content',pop);
+$('#popcart').popover('show');
+   }
+
+function clearCart() {
+    cart = JSON.parse(localStorage.getItem('cart'));
+    for (var item in cart) {
+        document.getElementById('div' + item).innerHTML = '<button id="' + item + '" class="btn btn-primary cart">Add To Cart</button>'
+    }
+    localStorage.clear();
+    cart = {};
+
+  updateCart(cart);
+}
+function updateCart(cart){
+     console.log(cart)
+     var sum=0;
+
+      for(var item in cart){
+ sum=sum+cart[item][0]
+          document.getElementById('div' + item).innerHTML = "<button id ='minus" + item + "' class='btn btn-primary minus'>-</button> <span id ='val" + item + "''>" + cart[item][0]+ "</span> <button id='plus" + item + "' class='btn btn-primary plus'>+</button>";
+ }localStorage.setItem('cart', JSON.stringify(cart));
+    document.getElementById('cart').innerHTML =sum;
+    updatePopover(cart);
+
+
+    console.log(cart);}
+
+
+<!--// Ifs plus or minus button is clicked, change the cart as well as the display value-->
+$('.divpr').on("click", "button.minus", function() {
+    a = this.id.slice(5, );
+    cart[a][0] = cart[a][0] - 1;
+    cart[a][0] = Math.max(0, cart[a][0]);
+    document.getElementById('val' + a).innerHTML = cart[a][0];
+    if(cart[a][0]==0){
+    document.getElementById('div' + a).innerHTML='<button id="' + a + '" class="btn btn-primary cart">Add To Cart</button>'
+    delete cart[a];
+    }
+    else{
+    document.getElementById('val' + a).innerHTML = cart[a][0];}
+    updateCart(cart);
+});
+$('.divpr').on("click", "button.plus", function() {
+    a = this.id.slice(4, );
+    cart[a][0] = cart[a][0] + 1;
+    document.getElementById('val' + a).innerHTML = cart[a][0];
+    updateCart(cart);
+});
+
+</script>
+{% endblock %}
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+
